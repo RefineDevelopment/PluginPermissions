@@ -1,25 +1,14 @@
 # **Plugin Permissions**
 
-> A repository holding plugin permissions for [Ultra Permissions][uperms].
-
-- [Discord][discord]
-- [Spigot][spigot]
-- [Contributors][contributors]
+> A repository holding plugin permissions for Phoenix.
+> Forked from https://github.com/TechsCode-Team/PluginPermissions
 
 ---
 
 ## **Overview**
 
-[Ultra Permissions][uperms] simplifies searching for permissions by suggesting them based on installed plugins. The permission suggestions will be retrieved from [this file][permissions].
-
-After that, it will try to extract missing permission nodes from the plugin JARs.
-
-That means that the database will always have priority.
-
-If you can't find suggestions for your installed plugins, that means this specific plugin is not included in our database yet and [Ultra Permissions][uperms] was not able to extract the nodes automatically.
-
+If you can't find suggestions for your installed plugins, that means this specific plugin is not included in our database yet and Phoenix (thank you ultraperms) was not able to extract the nodes automatically.
 In that case, you can contribute new permissions here.
-
 
 ## **Contribute permissions**
 
@@ -77,11 +66,7 @@ You can get it [here][extension].
 ---
 
 <!-- Links -->
-[uperms]: https://www.spigotmc.org/resources/ultra-permissions.42678/
-[discord]: https://discord.gg/3JuHDm8
-[spigot]: https://www.spigotmc.org/resources/authors/techscode.29620/
-[contributors]: CONTRIBUTORS.md
 [pull request]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests
-[permissions]: https://github.com/TechsCode-Team/PluginPermissions/blob/master/Permissions/Database.updb
+[permissions]: https://github.com/RefineDevelopment/PluginPermissions/blob/master/Permissions/Database.phdb
 [vscode]: https://code.visualstudio.com/
 [extension]: https://marketplace.visualstudio.com/items?itemName=RLNT.uperms-db-syntax
