@@ -6467,35 +6467,6 @@ UltraPrisonCore+ultraprison.multipliers.admin+Admin permission to manage multipl
 UltraPrisonCore+ultraprison.ranks.admin+Admin permission to manage ranks & prestiges.+/setrank <player> <rank_id>,/prestigeadmin add <player> <amount>,/prestigeadmin set <player> <amount>,/prestigeadmin remove <player> <amount>
 UltraPrisonCore+ultraprison.tokens.admin+Admin permission to manage tokens.+/tokens give <player> <amount>,/tokens remove <player> <amount>,/tokens set <player> <amount>
 UltraPrisonCore+ultraprison.value+Player permission to display value of his pickaxe.
-UltraPunishments+ultrapunishments.admin.openGUI+Allows access to /upun.+/upun
-UltraPunishments+ultrapunishments.ban.execute+Allows to ban a player.+/ban <User> <Server> <Time> <Notification Type> [Reason] 
-UltraPunishments+ultrapunishments.ban.revoke+Allows to unban a player.+/unban <User>
-UltraPunishments+ultrapunishments.mute.execute+Allows to mute a player.+/mute <User> <Time> <Notification Type> [Reason]
-UltraPunishments+ultrapunishments.mute.revoke+Allows to unmute a player.+/unmute <User>
-UltraPunishments+ultrapunishments.freeze.execute+Allows to freeze a player.+/freeze <User> <Time> <Notification Type> [Reason]
-UltraPunishments+ultrapunishments.freeze.revoke+Allows to unfreeze a player.+/unfreeze <User>
-UltraPunishments+ultrapunishments.kick.execute+Allows to kick a player from the server.+/kick <User> <Notification Type> [Reason]
-UltraPunishments+ultrapunishments.warning.execute+Allows to issue warnings.+/warn <User> <Server> <Kick|Message> [Reason]
-UltraPunishments+ultrapunishments.warning.revoke+Allows to revoke previously issued warnings.
-UltraPunishments+ultrapunishments.chatclear.execute+Allows the clear the chat for everyone.+/clearchat
-UltraPunishments+ultrapunishments.mutechat.execute+Allows to mute the server chat.+/mutechat
-UltraPunishments+ultrapunishments.rollback.command+Allows to rollback executed punishments.
-UltraPunishments+ultrapunishments.behavior.command+Allows to see own Behavior status.
-UltraPunishments+ultrapunishments.bypass.report+Bypasses getting reported.
-ultrapunishments+ultrapunishments.bypass.warn+Bypasses getting warned.
-UltraPunishments+ultrapunishments.bypass.kick+Bypasses getting kicked.
-UltraPunishments+ultrapunishments.bypass.ban+Bypasses getting banned.
-UltraPunishments+ultrapunishments.bypass.mute+Bypasses getting muted.
-UltraPunishments+ultrapunishments.bypass.freeze+Bypasses getting frozen.
-UltraPunishments+ultrapunishments.manage.templates+Allows to manage templates.
-UltraPunishments+ultrapunishments.manage.settings+Allows to manage settings.
-UltraPunishments+ultrapunishments.manage.exclusions+Allows to manage ban exclusions.
-UltraPunishments+ultrapunishments.manage.details+Allows to manage the details.
-UltraPunishments+ultrapunishments.report.respond+Allows to respond to reports.
-UltraPunishments+ultrapunishments.report.execute+Allows to execute the /report command.+/report
-UltraPunishments+ultrapunishments.mutechat.bypass+Allows players with this permission to bypass the mutechat.
-UltraPunishments+ultrapunishments.broadcaster.recieve+Allows players to see the punishment broadcast message.
-UltraPunishments+ultrapunishments.transferData+Allows access to the /uptransfer command.
 UltraRegions+ultraregions.admin+Allows the player to use the main command of the plugin to access the GUI.+/uregions
 UltraRegions+ultraregions.gamemode.region.bypass+Allows the player to bypass the regions default gamemode.
 UltraRegions+ultraregions.gamemode.world.bypass+Allows the player to bypass the worlds default gamemode.
@@ -6550,42 +6521,6 @@ UltraSkyWars+ultraskywars.wineffects.[name]+Grants you permission to buy vip Win
 UltraSkyWars+usw.admin+Grants you administrator permission to configure.
 UltraSkyWars+usw.forcestart+Force start a game.+/sw forcestart
 UltraSkyWars+usw.spectate+Spectate a game.+/sw spect <name>
-UltraStaffChat+staffchat.afk+Permission required to toggle afk status.+/scafk
-UltraStaffChat+staffchat.globalmute+Permission required to globally mute and unmute staff chat.+/mutesc
-UltraStaffChat+staffchat.join+Permission required to cause a staff join broadcast.
-UltraStaffChat+staffchat.leave+Permission required to cause a staff leave broadcast.
-UltraStaffChat+staffchat.list+Permission required to view the staff list.+/stafflist
-UltraStaffChat+staffchat.mute+Permission required to toggle receiving staff chat messages.+/scmute
-UltraStaffChat+staffchat.mutebypass+Permission required to bypass global mute.
-UltraStaffChat+staffchat.read+Permission required to receive staff chat messages.
-UltraStaffChat+staffchat.staff+Permission required to display on the staff list.
-UltraStaffChat+staffchat.switch+Permission required to cause a server switch broadcast.
-UltraStaffChat+staffchat.talk+Permission required to send a message in staff chat.+/staffchat <message>,/sc <message>
-UltraStaffChat+staffchat.toggle+Permission required to toggle sending staff chat messages.+/sctoggle
-UltraStaffChat+ultrastaffchat.reload+Permission required to reload the configuration files.+/ultrastaffchat reload,/usc reload
-UltraStaffChat+ultrastaffchat.update+Permission required to receive update notifications.
-UltraStaffChatPro+staffchat.afk.read+Permission required to receive afk broadcasts.
-UltraStaffChatPro+staffchat.afk+Permission required to toggle afk status.+/scafk
-UltraStaffChatPro+staffchat.global-mute.bypass+Permission required to bypass global mute.
-UltraStaffChatPro+staffchat.global-mute.read+Permission required to receive the global mute broadcast.
-UltraStaffChatPro+staffchat.global-mute+Permission required to globally mute and unmute staff chat.+/mutesc
-UltraStaffChatPro+staffchat.join.read+Permission required to receive join broadcasts.
-UltraStaffChatPro+staffchat.join+Permission required to cause a staff join broadcast.
-UltraStaffChatPro+staffchat.leave.read+Permission required to receive leave broadcasts.
-UltraStaffChatPro+staffchat.leave+Permission required to cause a staff leave broadcast.
-UltraStaffChatPro+staffchat.list.view-vanished+Permission required to view vanished players on the staff list.
-UltraStaffChatPro+staffchat.list.view+Permission required to view the staff list.+/stafflist
-UltraStaffChatPro+staffchat.list+Permission required to display on the staff list.
-UltraStaffChatPro+staffchat.mute+Permission required to toggle receiving staff chat messages.+/scmute
-UltraStaffChatPro+staffchat.read+Permission required to receive staff chat messages.
-UltraStaffChatPro+staffchat.switch.read+Permission required to receive switch broadcasts.
-UltraStaffChatPro+staffchat.switch+Permission required to cause a server switch broadcast.
-UltraStaffChatPro+staffchat.talk+Permission required to send a message in staff chat.+/staffchat <message>
-UltraStaffChatPro+staffchat.toggle+Permission required to toggle sending messages in staff chat.+/sctoggle
-UltraStaffChatPro+ultrastaffchatpro.debug+Permission required to execute debug commands.+/ultrastaffchatpro debug,/uscp debug
-UltraStaffChatPro+ultrastaffchatpro.reload+Permission required to reload the configuration files.+/ultrastaffchatpro reload,/uscp reload
-UltraStaffChatPro+ultrastaffchatpro.update+Permission required to receive update notifications.
-UltraTags+ultratags.reload+Ability to use the reload command (reloads the plugin configuration)+/ultratags reload,/ut reload,/uts reload
 uSkyBlock+usb.admin.*+Controls player-cooldowns+/usb cooldown,/usb cd clear,/usb cd c
 uSkyBlock+usb.admin.addmember+Adds the player to the island+/usb is addmember [player] [islandleader]
 uSkyBlock+usb.admin.cache+Flushes all caches to files+/usb flush
