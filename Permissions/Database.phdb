@@ -7083,4 +7083,77 @@ Phoenix+core.command.timer+Access to /timer.
 Phoenix+core.command.unregisterserver+Access to /unregisterserver.
 Phoenix+core.restrictedHub+Access to join restricted hubs.
 Phoenix+core.media+Show up in /medialist.
-
+pxBasic+core.command.sudo+Access to /sudo.
+pxBasic+core.command.masssay+Access to /masssay.
+pxBasic+core.command.heal.others+Heal other players.
+pxBasic+core.command.heal+Access to /heal.
+pxBasic+core.command.more+Access to /more.
+pxBasic+core.command.skull+Access to /skull.
+pxBasic+core.command.craft+Access to /craft.
+pxBasic+core.command.god+Access to /god.
+pxBasic+core.command.staffalert+Access to /staffalert.
+pxBasic+core.command.staffbroadcast+Access to /staffbroadcast.
+pxBasic+core.command.speed+Access to /speed
+pxBasic+core.command.broadcast+Access to /broadcast
+pxBasic+core.command.build.other+Enable build mode for other players.
+pxBasic+core.command.fly.others+Enable fly for other players.
+pxBasic+core.command.fly+Access to /fly.
+pxBasic+core.command.feed.others+Feed other players.
+pxBasic+core.command.feed+Access to /feed.
+pxBasic+core.command.clear+Access to /clear.
+pxBasic+core.command.enchant+Access to /enchant.
+pxBasic+core.command.gamemode+Access to /gamemode.
+pxBasic+core.command.enderchest.other+Open another player's enderchest.
+pxBasic+core.command.shrug+Access to /shrug.
+pxBasic+core.command.item+Access to /item.
+pxBasic+core.command.addlore+Access to /addlore.
+pxBasic+core.command.removelore+Access to /removelore.
+pxBasic+core.command.rename+Access to /rename.
+pxBasic+core.command.pxbasic+Access to /pxbasic.
+pxBasic+core.command.repair+Access to /repair.
+pxBasic+core.command.repair.hand+Repair item in hand.
+pxBasic+core.command.repair.all+Repair all items.
+pxBasic+core.command.repair.armor+Repair armor.
+pxBasic+core.command.teleport+Access to /teleport.
+pxBasic+core.command.teleporthere+Access to /teleporthere.
+pxBasic+core.command.teleportall+Access to /teleportall.
+pxBasic+core.command.teleportposition+Access to /teleportposition.
+pxBasic+core.command.teleportworld+Access to /teleportworld.
+pxBasic+core.command.top+Access to /top
+pxStaff+core.command.adminreport+Access to /adminreport.
+pxStaff+core.command.vanish+Access to /vanish.
+pxStaff+core.command.freeze+Access to /freeze.
+pxStaff+core.command.invsee+Access to /invsee.
+pxStaff+core.command.clearchat+Access to /clearchat.
+pxStaff+core.command.mutechat+Access to /mutechat.
+pxStaff+core.command.slowchat+Access to /showchat.
+pxStaff+core.command.modmode.other+Toggle modmode for another player.
+pxStaff+core.command.modmode+Access to /modmode.
+pxStaff+pxstaff.command.reload+Access to /pxstaff reload.
+pxStaff+core.command.report+Access to /report.
+pxStaff+core.command.request+Access to /request.
+pxStaff+core.command.reports+Access to /reports.
+pxStaff+core.command.requestmute+Access to /requestmute.
+pxStaff+core.command.vanish+Access to /vanish.
+pxStaff+core.command.vanish.other+Vanish another player.
+pxStaff+core.command.hidestaff+Access /hidestaff.
+pxCosmetics+core.chat.colors.*+Use any chat color.
+pxCosmetics+core.chat.colors.[chatcolor]+Use specific chat color.
+pxCosmetics+core.colors.*+Use any color.
+pxCosmetics+core.colors.[color]+Use specific color.
+pxCosmetics+core.killeffect.*+Use any kill effect.
+pxCosmetics+core.killeffect.[killeffect]+Use specific kill effect.
+pxCosmetics+core.killmessages.*+Use any kill messages.
+pxCosmetics+core.killmessages.[killmessages]+Use specific kill messages.
+pxCosmetics+core.particle.* (WIP)+Use any particle.
+pxCosmetics+core.particle.[particle] (WIP)+Use specific particle.
+pxCosmetics+core.trails.*+Use any trail.
+pxCosmetics+core.trails.[trail]+Use specific trail.
+pxLevels+core.command.adminexp+Access to /adminexp.
+pxLevels+core.command.adminlevel+Access to /adminlevel.
+pxQueue+queue.command.adminqueue+Access to /adminqueue.
+pxQueue+queue.command.adminqueue.reload+Access to /adminqueue reload.
+pxQueue+core.queue.bypass+Bypass the queue
+pxQueue+core.queue.logout+Keeps the queue after logout also requires core.time.rank.time
+pxQueue+core.time.[rank].[time]+Decides how long to keep someone in queue after logout
+Quark+hub.command.hub+Access to /quark.
