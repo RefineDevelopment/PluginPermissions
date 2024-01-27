@@ -7145,8 +7145,8 @@ pxCosmetics+core.killeffect.*+Use any kill effect.
 pxCosmetics+core.killeffect.[killeffect]+Use specific kill effect.
 pxCosmetics+core.killmessages.*+Use any kill messages.
 pxCosmetics+core.killmessages.[killmessages]+Use specific kill messages.
-pxCosmetics+core.particle.* (WIP)+Use any particle.
-pxCosmetics+core.particle.[particle] (WIP)+Use specific particle.
+pxCosmetics+core.particle.*+Use any particle.
+pxCosmetics+core.particle.[particle]+Use specific particle.
 pxCosmetics+core.trails.*+Use any trail.
 pxCosmetics+core.trails.[trail]+Use specific trail.
 pxLevels+core.command.adminexp+Access to /adminexp.
