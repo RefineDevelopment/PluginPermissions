@@ -7150,3 +7150,48 @@ pxQueue+core.queue.bypass+Bypass the queue
 pxQueue+core.queue.logout+Keeps the queue after logout also requires core.time.rank.time
 pxQueue+core.time.[rank].[time]+Decides how long to keep someone in queue after logout
 Quark+hub.command.hub+Access to /quark.+/quark reload
+Bolt+bolt.profile.fly+Allows flying on spawn.
+Bolt+bolt.profile.arena+Allows selecting custom arena.
+Bolt+bolt.bot.custom+Access to custom bot preset.
+Bolt+bolt.profile.ranked+Bypass ranked requirements.
+Bolt+bolt.profile.ping+Bypass queue ping limit.
+Bolt+bolt.profile.pingfactor+Access to ping factor option.
+Bolt+bolt.profile.flymode+Access to fly mode option.
+Bolt+bolt.profile.dropitems+Access to drop items option.
+Bolt+bolt.profile.clearinventory+Access to clear inventory option.
+Bolt+bolt.profile.deathanimation+Access to death animation option.
+Bolt+bolt.tournament.host+Access to /tournament host+/tournament host <DUO|SOLO>
+Bolt+bolt.profile.silent+Access to silent mode.+/silent
+Bolt+bolt.killeffect.*+Grant access to all kill effects.
+Bolt+bolt.killeffect.[name]+Grant access to a specific kill effect named [name].
+Bolt+bolt.killmessages.*+Grant access to all kill messages.
+Bolt+bolt.killmessages.[name]+Grant access to a specific kill message named [name].
+Bolt+bolt.trails.*+Grant access to all trails.
+Bolt+bolt.trails.[name]+Grant access to a specific trail named [name].
+Bolt+bolt.party.limit+Change the Party Limit.
+Bolt+bolt.party.public+Make the Party Public.
+Bolt+bolt.party.announce+Announce Public Party.
+Bolt+bolt.party.pingfactor+Change the Party Ping Factor.
+Bolt+bolt.tournament.admin+Manage Tournaments.
+Bolt+bolt.arena.admin+Manage Arenas.
+Bolt+bolt.arena.setup+Access to Arena Setup.
+Bolt+bolt.bot.admin+Manage Bot Duels.
+Bolt+bolt.bot.knockback+Manage Bot Knockback.
+Bolt+bolt.event.admin+Manage Events.
+Bolt+bolt.holo.admin+Manage Bolt Holograms.
+Bolt+bolt.import.admin+Access to Import Command.
+Bolt+bolt.kit.admin+Access to Kit Commands.
+Bolt+bolt.admin.reload+Reload Config.
+Bolt+bolt.admin.save+Save Config.
+Bolt+bolt.admin.leaderboard+Update Leaderboards.
+Bolt+bolt.admin.reset+Reset Statistics for Everyone.
+Bolt+bolt.admin.setup+Access to Setup Commands.
+Bolt+bolt.admin.refill+Refill Potions.
+Bolt+bolt.admin.forfeit+Cancel Match.
+Bolt+bolt.admin.debug+Enable Debug Mode.
+Bolt+bolt.admin.resetprofile+Reset Profile.
+Bolt+bolt.profile.revert+Revert Ranked Matches Elo Changes.
+Bolt+bolt.profile.edit+Toggle Edit Mode.
+Bolt+bolt.elo.admin+Manage Elo.
+Bolt+bolt.queue.admin+Manage Queue.
+Bolt+bolt.profile.admin+Access to Admin Only commands.
