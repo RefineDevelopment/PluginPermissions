@@ -7172,26 +7172,25 @@ Bolt+bolt.party.limit+Change the Party Limit.
 Bolt+bolt.party.public+Make the Party Public.
 Bolt+bolt.party.announce+Announce Public Party.
 Bolt+bolt.party.pingfactor+Change the Party Ping Factor.
-Bolt+bolt.tournament.admin+Manage Tournaments.
-Bolt+bolt.arena.admin+Manage Arenas.
-Bolt+bolt.arena.setup+Access to Arena Setup.
-Bolt+bolt.bot.admin+Manage Bot Duels.
-Bolt+bolt.bot.knockback+Manage Bot Knockback.
-Bolt+bolt.event.admin+Manage Events.
-Bolt+bolt.holo.admin+Manage Bolt Holograms.
-Bolt+bolt.import.admin+Access to Import Command.
-Bolt+bolt.kit.admin+Access to Kit Commands.
-Bolt+bolt.admin.reload+Reload Config.
-Bolt+bolt.admin.save+Save Config.
-Bolt+bolt.admin.leaderboard+Update Leaderboards.
-Bolt+bolt.admin.reset+Reset Statistics for Everyone.
-Bolt+bolt.admin.setup+Access to Setup Commands.
-Bolt+bolt.admin.refill+Refill Potions.
-Bolt+bolt.admin.forfeit+Cancel Match.
-Bolt+bolt.admin.debug+Enable Debug Mode.
-Bolt+bolt.admin.resetprofile+Reset Profile.
-Bolt+bolt.profile.revert+Revert Ranked Matches Elo Changes.
-Bolt+bolt.profile.edit+Toggle Edit Mode.
-Bolt+bolt.elo.admin+Manage Elo.
-Bolt+bolt.queue.admin+Manage Queue.
-Bolt+bolt.profile.admin+Access to Admin Only commands.
+Bolt+bolt.tournament.admin+Manage tournaments.+/tournament
+Bolt+bolt.arena.admin+Manage Arenas.+/arena
+Bolt+bolt.arena.setup+Access to Arena Setup.+/arena
+Bolt+bolt.bot.admin+Manage bot duels.+/bot
+Bolt+bolt.bot.knockback+Manage bot knockback.+/botkb
+Bolt+bolt.event.admin+Manage events.+/event
+Bolt+bolt.holo.admin+Manage custom Bolt holograms+/boltholo
+Bolt+bolt.kit.admin+Access to kit commands.+/kit
+Bolt+bolt.admin.reload+Reload configuration file.+/bolt reload
+Bolt+bolt.admin.save+Save configuration file.+/bolt save
+Bolt+bolt.admin.leaderboard+Update leaderboards manually.+/bolt updateData
+Bolt+bolt.admin.reset+Reset statistics for everyone.+/bolt reset
+Bolt+bolt.admin.setup+Access to setup commands.+/bolt setLobby,/bolt fireball,/bolt goldenHead
+Bolt+bolt.admin.refill+Refill potions.+/bolt refill
+Bolt+bolt.admin.forfeit+Cancel a match.+/bolt forfeit <target>
+Bolt+bolt.admin.debug+Enable debugging mode.
+Bolt+bolt.admin.resetprofile+Reset practice profile.+/bolt resetStats <target>
+Bolt+bolt.profile.revert+Revert ranked matches elo changes.
+Bolt+bolt.profile.edit+Toggle editor mode.+/editmode
+Bolt+bolt.elo.admin+Manage profile elo.+/elo
+Bolt+bolt.queue.admin+Manage queues.+/queue
+Bolt+bolt.profile.admin+Access to admin commands.
