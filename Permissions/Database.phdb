@@ -6993,7 +6993,7 @@ Phoenix+core.command.adminprofile+View a players admin profile.+/adminprofile <p
 Phoenix+core.command.alert+Access to /alert.+/alert <message>
 Phoenix+core.2fa+Access to 2fa related commands and actions.+/2fa
 Phoenix+core.command.force2fa+Forces a player to authenticate with 2fa.+/force2fa <player>
-Phoenix+core.command.chattagsadmin+Access to manage chat tags.+/chattagsadmin,/tagsadmin
+Phoenix+core.command.tags.admin+Access to manage chat tags.+/tags create (etc)
 Phoenix+core.command.commandlogs+View a players command logs.+/commandlogs player <player> [time],/commandlogs server <server> [time]
 Phoenix+core.command.disguiseadmin+Access to /disguiseadmin.+/disguiseadmin
 Phoenix+core.command.disguiseadmin.disguise+Disguise a player.+/disguise <rank> <player> <skin> <target>
