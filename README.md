@@ -1,3 +1,7 @@
+Link: https://www.spigotmc.org/resources/coinsengine-⭐-economy-and-custom-currencies.84121/
+Permissions: https://nightexpressdev.com/coinsengine/permissions/
+
+
 # **Plugin Permissions**
 
 > A repository holding plugin permissions for Phoenix.
