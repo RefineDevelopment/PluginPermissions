@@ -1888,6 +1888,29 @@ CMI+cmi.worldlimit.fly.bypass+Allows to bypass fly mode limitations by worlds
 CMI+cmi.worldlimit.gamemode.bypass+Allows to bypass game mode limitations by worlds
 CMI+cmi.worldlimit.god.bypass+Allows to bypass god mode limitations by worlds
 Coins+coins.admin+Give access to all admin commands.
+CoinsEngine+coinsengine.*+Access to all plugin functions.
+CoinsEngine+coinsengine.currency.*+Grants access to all currencies.
+CoinsEngine+coinsengine.currency.[currency]+Grants access to a currency. Replace [currency] with a Currency ID.
+CoinsEngine+coinsengine.command.*+Access to all commands.
+CoinsEngine+coinsengine.command.currency.balance+Access to currency's balance command.+/coins balance
+CoinsEngine+coinsengine.command.currency.balance.others+Access to currency's balance command on other players.+/coins balance <player>
+CoinsEngine+coinsengine.command.currency.add+Access to currency's give command.+/coins give <player> <amount> [-s] [-sf]
+CoinsEngine+coinsengine.command.currency.addall+Access to currency's giveall command.+/coins giveall <amount> [-s] [-sf]
+CoinsEngine+coinsengine.command.currency.set+Access to currency's set command.+/coins set <player> <amount> [-s] [-sf]
+CoinsEngine+coinsengine.command.currency.take+Access to currency's take command.+/coins take <player> <amount> [-s] [-sf]
+CoinsEngine+coinsengine.command.currency.exchange+Access to currency's exchange command.+/coins exchange <currency> <amount>
+CoinsEngine+coinsengine.command.currency.payments+Access to currency's payments command.+/pay
+CoinsEngine+coinsengine.command.currency.payments.others+Access to currency's payments command on other players.+/pay <player> <amount>
+CoinsEngine+coinsengine.command.currency.send+Access to currency's send command.
+CoinsEngine+coinsengine.command.currency.top+Access to currency's top command.+/coins top [page]
+CoinsEngine+coinsengine.command.wallet+Access to /wallet command.+/wallet
+CoinsEngine+coinsengine.command.wallet.others+Access to /wallet command on other players.+/wallet [player]
+CoinsEngine+coinsengine.command.create+Access to /coe create command.+/coe create <name> <symbol> <decimals>
+CoinsEngine+coinsengine.command.reset+Access to /coe reset command.+/coe reset <player>
+CoinsEngine+coinsengine.command.resetall+Access to /coe resetall command.+/coe resetall [currency]
+CoinsEngine+coinsengine.command.migrate+Access to /coe migrate command.+/coe migrate <plugin> <currency>
+CoinsEngine+coinsengine.command.reload+Access to /coe reload command.+/coe reload
+CoinsEngine+coinsengine.hidefromtops+Hides player from leaderboards.
 CommandDoesNotExist+cdne.[command]+Ability to bypass the command block
 CommandDoesNotExist+cdne.list.list+Ability to use the list command (lists all currently blocked commands and words)+/cdne list
 CommandDoesNotExist+cdne.list.modify+Ability to use the add and remove command (adds and removes commands and words from the blocked list)+/cdne add,/cdne remove
