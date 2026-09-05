@@ -6969,7 +6969,7 @@ Phoenix+core.grant.*+Grant & Revoke all ranks.
 Phoenix+core.grant.[rank]+Grant & Revoke specific rank.
 Phoenix+core.command.rank+Access to rank editor and commands.+/rank
 Phoenix+core.command.security+Access to manage security users.+/security add <player> <admin>,/security remove <player>,/security list [page]
-Phoenix+core.command.alts+Access to alts commands.+/alts <player>,/altsmenu <player>
+Phoenix+core.command.alts+Access to alts commands.+/alts <player>,/alts menu <player>
 Phoenix+core.command.punish+Access to the punish menu (/punish)+/punish <player>
 Phoenix+core.punish.[ladder]+Allow the use of a punishment ladder in the punish menu.
 Phoenix+core.command.lookup+Allows a staff member to lookup a punishment id.+/lookup <id>
@@ -7025,7 +7025,7 @@ Phoenix+core.command.disguiseadmin.undisguise+Undisguise a player.+/disguiseadmi
 Phoenix+core.command.disguiseadmin.checkdisguise+Check a player's disguise.+/disguiseadmin checkdisguise <player>
 Phoenix+core.command.disguiseadmin.history+View disguise history.+/disguiseadmin history <player>
 Phoenix+core.command.execcmd+Access to /execcmd.+/execcmd global <command>,/execcmd group <group> <command>,/execcmd server <server> <command>
-Phoenix+core.command.filter+Access to /filter.+/filter Creaxx add
+Phoenix+core.command.filter+Access to /filter.+/filter list [page],/filter create <name> <filter> <type> [punishmentLadder],/filter edit <filter>,/filter delete <filter>,/filter hard <filter> <hard>,/filter test <text>
 Phoenix+core.command.groupinfo+Access to /groupinfo.+/groupinfo group <group>,/groupinfo list
 Phoenix+core.command.mclogs+Access to /mclogs+/mclogs list [page],/mclogs upload <fileName>
 Phoenix+core.command.notifications.list+List notifications.+/notifications list [page]
@@ -7098,6 +7098,183 @@ Phoenix+core.command.timer+Access to /timer.+/timer name <name>,/timer time <tim
 Phoenix+core.command.unregisterserver+Access to /unregisterserver.
 Phoenix+core.restrictedHub+Access to join restricted hubs.
 Phoenix+core.media+Show up in /medialist.
+Phoenix+core.command.alts.menu+Browse a player's alts in a menu.+/alts menu <player>
+Phoenix+core.command.alts.ips+Every address an account has used, and who else used them.+/alts ips <player>
+Phoenix+core.command.alts.locations+Where an account has connected from over time.+/alts locations <player>
+Phoenix+core.command.alts.lookup+Which accounts have used a given address.+/alts lookup <ip> [page]
+Phoenix+core.command.alts.trust+Mark two accounts as known siblings, not alts.+/alts trust <player> <player>
+Phoenix+core.command.alts.untrust+Undo a trust between two accounts.+/alts untrust <player> <player>
+Phoenix+core.command.alts.suppress+Hide the link between two accounts from alt lists.+/alts suppress <player> <player>
+Phoenix+core.command.alts.suppressed+Links hidden from a player's alt list.+/alts suppressed <player> [page]
+Phoenix+core.command.alts.address+Details on the address an account is using.+/alts address <player>
+Phoenix+core.command.alts.address.force-shared+Treat an account's address as shared, like a school or VPN.+/alts address force-shared <player>
+Phoenix+core.command.alts.address.force-trusted+Treat an account's address as one trusted household.+/alts address force-trusted <player>
+Phoenix+core.command.alts.address.clear+Drop a forced classification off an account's address.+/alts address clear <player>
+Phoenix+core.command.alts.debug+Why two accounts scored as linked, signal by signal.+/alts debug <player> <player>
+Phoenix+core.command.reblacklist+Allows a staff member to reblacklist a player.+/reblacklist <player> [-s] <reason> [-s]
+Phoenix+core.command.voidpunishment+Void a single punishment.+/voidpunishment <id> <void reason> [note]
+Phoenix+core.command.voidbans+Void every ban on record, for every player on the network.+/voidbans
+Phoenix+core.command.voidblacklists+Void every blacklist on record, for every player on the network.+/voidblacklists
+Phoenix+core.command.voidmutes+Void every mute on record, for every player on the network.+/voidmutes
+Phoenix+core.command.wipekicks+Delete every kick on record, for every player on the network.+/wipekicks [-confirm],/user wipe kicks [-confirm]
+Phoenix+core.command.wipewarns+Delete every warn on record, for every player on the network.+/wipewarns [-confirm],/user wipe warns [-confirm]
+Phoenix+core.punish.duration.bypass+Set punishment durations above the configured maximum.
+Phoenix+core.immune+Cannot be punished while the immunity system is on.
+Phoenix+core.immune.bypass+Punish players who are immune.
+Phoenix+core.command.banwave+Access to /banwave.+/banwave
+Phoenix+core.command.banwave.create+Start a new wave.+/banwave create <name>
+Phoenix+core.command.banwave.add+Stage an account in a wave.+/banwave add <wave> <player> <type> <duration> <reason> [-ip] [-shadow]
+Phoenix+core.command.banwave.remove+Take an account back out of a wave.+/banwave remove <wave> <player>
+Phoenix+core.command.banwave.list+The waves still waiting.+/banwave list
+Phoenix+core.command.banwave.view+What is staged in a wave.+/banwave view <wave>
+Phoenix+core.command.banwave.schedule+Set the day and time a wave goes out.+/banwave schedule <wave> <when>
+Phoenix+core.command.banwave.unschedule+Stop a wave going out on its own.+/banwave unschedule <wave>
+Phoenix+core.command.banwave.release+Send a wave out now.+/banwave release <wave>
+Phoenix+core.command.banwave.void+Take back a wave that has already gone out.+/banwave void <wave> <void reason>
+Phoenix+core.command.banwave.cancel+Throw a wave away without releasing it.+/banwave cancel <wave>
+Phoenix+core.command.punishmentladder.list+Access to /pladder list.+/punishmentladder list [page]
+Phoenix+core.command.punishmentladder.priority+Set the priority of a ladder.+/punishmentladder priority <ladder> <priority>
+Phoenix+core.command.punishmentladder.hidden+Hide a ladder from the punish menu.+/punishmentladder hidden <ladder> [hidden]
+Phoenix+core.command.punishmentladder.editpunishment+Access to /pladder editpunishment.+/punishmentladder editpunishment <ladder> <id> <punishmentType> <duration> <ip> <shadow (Mute Only)> [decay]
+Phoenix+core.command.ogrant+Grant a rank from console with an explicit duration and scopes.+/ogrant <player> <rank> <duration> <scopes> <reason>
+Phoenix+core.command.rgrant+Remove a grant from console.+/rgrant <player> <rank> <reason>
+Phoenix+core.command.report+Access to /report.+/report <player> [reason]
+Phoenix+core.command.reports+Access to /reports.+/reports <player>
+Phoenix+core.command.reports.all+Every open report on the network.+/reports all
+Phoenix+core.command.reports.watchlist+Players reported often enough to be worth a look.+/reports watchlist
+Phoenix+core.command.reports.stats+How the report queue has been going.+/reports stats [days]
+Phoenix+core.command.reports.categories+Manage the categories players report under.+/reports categories,/reports categories create <id> <punishmentLadder> <material> <displayName>,/reports categories delete <category>,/reports categories displayName <category> <displayName>,/reports categories material <category> <material>,/reports categories punishmentladder <category> <punishmentLadder>,/reports categories description <category>
+Phoenix+core.command.watchlist+Players reported often enough to be worth a look.+/watchlist
+Phoenix+core.command.request+Access to /request.+/request <message>
+Phoenix+core.command.requestmute+Stop a player sending reports and requests.+/reportmute <player>
+Phoenix+core.command.vanish+Access to /vanish.+/vanish,/amivanished
+Phoenix+core.command.vanish.others+Vanish another player.+/vanish [player]
+Phoenix+core.command.modmode+Access to /modmode.+/modmode
+Phoenix+core.command.modmode.others+Toggle modmode for another player.+/modmode [player]
+Phoenix+core.command.hidestaff+Access to /hidestaff.+/hidestaff
+Phoenix+core.command.invsee+Access to /invsee.+/invsee <player>
+Phoenix+core.command.freeze+Access to /freeze.+/freeze <player>
+Phoenix+core.command.setfreezeloc+Set where frozen players are teleported.+/setfreezeloc
+Phoenix+core.command.panic+Access to /panic.+/panic
+Phoenix+core.command.unpanic+Take a player out of panic.+/unpanic <player>
+Phoenix+core.command.staffactivity+View a staff member's activity.+/staffactivity <player>
+Phoenix+core.command.timeline+Check for how long a player has been staff.+/timeline <player>
+Phoenix+core.command.chatlogs+Access to /chatlogs.+/chatlogs search <player> <message> [page],/chatlogs view <player> [time] [page]
+Phoenix+core.command.chatlogs.clear+Clear a player's chat logs.+/chatlogs clear <player>
+Phoenix+core.notes.view+See a player's notes when they join.
+Phoenix+core.lunar.staffmods+Use the Lunar Client staff mods.
+Phoenix+core.command.clearchat+Access to /clearchat.+/clearchat
+Phoenix+core.command.mutechat+Access to /mutechat.+/mutechat
+Phoenix+core.command.slowchat+Access to /slowchat.+/slowchat <seconds>
+Phoenix+core.clearchat.bypass+Keep seeing chat through /clearchat.
+Phoenix+core.mutechat.bypass+Talk while chat is muted.
+Phoenix+core.slowchat.bypass+Talk without waiting out chat slowmode.
+Phoenix+core.antispam.bypass+Bypass the chat anti-spam.
+Phoenix+core.message.colored+Use color codes in private messages.
+Phoenix+core.bypass.tabcomplete+Bypass tab complete filtering.
+Phoenix+core.disguise.real.bypass+Disguise as the name of a real player.
+Phoenix+core.command.analytics+Access to /analytics.+/analytics total,/analytics view <server>
+Phoenix+core.command.deletemessage+Delete a chat message for everyone.+/deletemessage <uuid>
+Phoenix+core.command.rawalert+Send an alert without any formatting.+/rawalert <message>
+Phoenix+core.command.transfer+Transfer a player to another server.+/transfer <player> <host> [port]
+Phoenix+core.command.domainstats+Access to /domainstats.+/domainstats
+Phoenix+core.command.resourcepack+Access to /resourcepack.+/resourcepack push <url> <hash> [required] [prompt],/resourcepack pushplayer <player> <url> <hash> [required] [prompt],/resourcepack remove <url>,/resourcepack clear
+Phoenix+core.command.phoenix.config+Access to /phoenix config.+/phoenix config set-master,/phoenix config fetch,/phoenix config push,/phoenix config force-fetch-all
+Phoenix+core.command.reset2fa+Reset a player's 2fa.+/reset2fa <player>
+Phoenix+core.command.customtagsadmin+Access to /customtagsadmin.+/customtagsadmin
+Phoenix+core.command.customtagsadmin.manage+Manage custom tags in a menu.+/customtagsadmin manage
+Phoenix+core.command.customtagsadmin.list+List a player's custom tags.+/customtagsadmin list <player> [page]
+Phoenix+core.command.customtagsadmin.check-tokens+Check how many custom tag tokens a player has.+/customtagsadmin check-tokens <player>
+Phoenix+core.command.customtagsadmin.add-tokens+Give a player custom tag tokens.+/customtagsadmin add-tokens <player> <amount>
+Phoenix+core.command.customtagsadmin.remove-tokens+Take custom tag tokens off a player.+/customtagsadmin remove-tokens <player> <amount>
+Phoenix+core.command.user.staffinfo+View a user's staff information.+/user staffinfo <player>
+Phoenix+core.command.user.delete+Erase everything about a player, moderation history included.+/user purge <player>
+Phoenix+core.command.user.gdpr.export+Export a user's data compliant with the GDPR.+/user gdpr export <player> [-file]
+Phoenix+core.command.user.gdpr.delete+Delete a user's data compliant with the GDPR, keeping moderation data.+/user gdpr delete <player> [-export-data]
+Phoenix+core.command.user.massaddperm+Add several permissions to a user at once.+/user perm mass-add <player> <permission (Split with ;)> <duration> [scopes]
+Phoenix+core.command.user.clearperm+Clear a user's permissions.+/user perm clear <player>
+Phoenix+core.command.user.searchperm+Search for who holds a permission.+/user perm search <permission> [page]
+Phoenix+core.command.panel+Access to /panel.+/panel
+Phoenix+core.command.panel.code+Get your web panel login code.+/panel code,/panel link
+Phoenix+core.command.panel.reset+Invalidate a player's panel codes.+/panel reset <player>
+Phoenix+core.command.panel.logout+End a player's panel sessions.+/panel logout <player>
+Phoenix+core.panel.*+Every web panel capability, except core.panel.gdpr.erase.
+Phoenix+core.panel.lookup+Look players up in the web panel.
+Phoenix+core.panel.punishments+View punishment history in the web panel.
+Phoenix+core.panel.punish+Issue and lift punishments from the web panel.
+Phoenix+core.panel.punish.edit+Rewrite a punishment that has already been issued.
+Phoenix+core.panel.status+View server status in the web panel.
+Phoenix+core.panel.health+View server health in the web panel.
+Phoenix+core.panel.alts+View alt links in the web panel.
+Phoenix+core.panel.reports+View reports in the web panel.
+Phoenix+core.panel.reports.manage+Change the status of a report from the web panel.
+Phoenix+core.panel.chatlogs+Read chat logs in the web panel.
+Phoenix+core.panel.snapshots+Read chat snapshots in the web panel.
+Phoenix+core.panel.commandlogs+Read command logs in the web panel.
+Phoenix+core.panel.grant+Grant and revoke ranks from the web panel.
+Phoenix+core.panel.command+Run server commands from the web panel.
+Phoenix+core.panel.alert+Send alerts from the web panel.
+Phoenix+core.panel.servers.manage+Whitelist, reboot and move servers from the web panel.
+Phoenix+core.panel.staff+View the staff roster in the web panel.
+Phoenix+core.panel.permissions+Browse permissions in the web panel.
+Phoenix+core.panel.permissions.edit+Apply a permission across ranks from the web panel.
+Phoenix+core.panel.config+Read config files in the web panel.
+Phoenix+core.panel.config.edit+Save config files from the web panel.
+Phoenix+core.panel.definitions+Read rank definitions in the web panel.
+Phoenix+core.panel.definitions.edit+Save, delete and restore rank definitions from the web panel.
+Phoenix+core.panel.waves+View ban waves in the web panel.
+Phoenix+core.panel.waves.manage+Create, schedule, stage, release and void ban waves from the web panel.
+Phoenix+core.panel.gdpr+Export a user's data from the web panel.
+Phoenix+core.panel.gdpr.erase+Erase a user's data from the web panel. Not covered by core.panel.*.
+Phoenix+core.command.broadcast+Access to /broadcast.+/broadcast <message>
+Phoenix+core.command.staffalert+Access to /staffalert.+/staffalert <message>
+Phoenix+core.command.staffbroadcast+Access to /staffbroadcast.+/staffbroadcast <message>
+Phoenix+core.command.masssay+Access to /masssay.+/masssay <chat|command>
+Phoenix+core.command.sudo+Access to /sudo.+/sudo <player> <chat|command>
+Phoenix+core.command.build+Access to /build.+/build
+Phoenix+core.command.build.others+Enable build mode for other players.+/build [player]
+Phoenix+core.command.fly+Access to /fly.+/fly
+Phoenix+core.command.fly.others+Enable fly for other players.+/fly [player]
+Phoenix+core.command.heal+Access to /heal.+/heal
+Phoenix+core.command.heal.others+Heal other players.+/heal [player]
+Phoenix+core.command.feed+Access to /feed.+/feed
+Phoenix+core.command.feed.others+Feed other players.+/feed [player]
+Phoenix+core.command.god+Access to /god.+/god
+Phoenix+core.command.kill+Access to /kill.+/kill <player>
+Phoenix+core.command.clear+Access to /clear.+/clear
+Phoenix+core.command.clear.others+Clear another player's inventory.+/clear [player]
+Phoenix+core.command.enderchest+Access to /enderchest.+/enderchest
+Phoenix+core.command.enderchest.other+Open another player's enderchest.+/enderchest [player]
+Phoenix+core.command.craft+Access to /craft.+/craft
+Phoenix+core.command.more+Access to /more.+/more
+Phoenix+core.command.item+Access to /item.+/item <material> [amount] [player]
+Phoenix+core.command.skull+Access to /skull.+/skull <player>
+Phoenix+core.command.enchant+Access to /enchant.+/enchant <enchantment> <level>
+Phoenix+core.command.repair+Access to /repair.+/repair hand
+Phoenix+core.command.repair.hand+Repair the item in hand.+/repair hand
+Phoenix+core.command.repair.all+Repair all items.+/repair all
+Phoenix+core.command.repair.armor+Repair armor.+/repair armor
+Phoenix+core.command.addlore+Access to /addlore.+/addlore <lore>
+Phoenix+core.command.removelore+Access to /removelore.+/removelore <number>
+Phoenix+core.command.rename+Access to /rename.+/rename <name>
+Phoenix+core.command.speed+Access to /speed.+/speed <fly|walk> <amount> [player]
+Phoenix+core.command.shrug+Access to /shrug.+/shrug
+Phoenix+core.command.gamemode+Access to /gamemode.+/gamemode <gamemode> [player]
+Phoenix+core.command.gamemode.others+Change another player's gamemode.+/gamemode <gamemode> [player]
+Phoenix+core.command.gamemode.survival+Switch to survival mode.+/gamemode survival [player],/gms [player]
+Phoenix+core.command.gamemode.creative+Switch to creative mode.+/gamemode creative [player],/gmc [player]
+Phoenix+core.command.gamemode.adventure+Switch to adventure mode.+/gamemode adventure [player],/gma [player]
+Phoenix+core.command.gamemode.spectator+Switch to spectator mode.+/gamemode spectator [player],/gmsp [player]
+Phoenix+core.command.teleport+Access to /teleport.+/teleport <player>
+Phoenix+core.command.teleporthere+Access to /teleporthere.+/teleporthere <player>
+Phoenix+core.command.teleportall+Access to /teleportall.+/teleportall
+Phoenix+core.command.teleportposition+Access to /teleportposition.+/teleportposition <x> <y> <z> [yaw] [pitch]
+Phoenix+core.command.teleportworld+Access to /teleportworld.+/teleportworld <world>
+Phoenix+core.command.top+Access to /top.+/top
+Phoenix+core.*+Grants the player all permissions of the plugin.
+Phoenix+core.command.*+Grants the player access to every Phoenix command.
+Phoenix+core.grant+Receive rank name suggestions while typing commands. The node this checks is configurable.
+Phoenix+group.[group]+Treated as membership of a LuckPerms group, while the group permission emulator is on.
 pxBasic+core.command.sudo+Access to /sudo.+/sudo <player> <chat|command>
 pxBasic+core.command.masssay+Access to /masssay.+/masssay <chat|command>
 pxBasic+core.command.heal.others+Heal other players.+/heal [player]
